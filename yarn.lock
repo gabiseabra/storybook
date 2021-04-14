@@ -17609,13 +17609,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cra-config-babel@workspace:examples/cra-config-babel"
   dependencies:
-    "@storybook/addon-actions": 6.3.0-alpha.5
-    "@storybook/addon-links": 6.3.0-alpha.5
-    "@storybook/addons": 6.3.0-alpha.5
-    "@storybook/builder-webpack4": 6.3.0-alpha.5
+    "@storybook/addon-actions": 6.3.0-alpha.7
+    "@storybook/addon-links": 6.3.0-alpha.7
+    "@storybook/addons": 6.3.0-alpha.7
+    "@storybook/builder-webpack4": 6.3.0-alpha.7
     "@storybook/preset-create-react-app": ^3.1.6
-    "@storybook/react": 6.3.0-alpha.5
-    "@storybook/theming": 6.3.0-alpha.5
+    "@storybook/react": 6.3.0-alpha.7
+    "@storybook/theming": 6.3.0-alpha.7
     babel-core: 6
     babel-loader: 8.2.2
     babel-runtime: 6
