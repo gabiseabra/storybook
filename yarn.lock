@@ -17616,13 +17616,10 @@ __metadata:
     "@storybook/preset-create-react-app": ^3.1.6
     "@storybook/react": 6.3.0-alpha.7
     "@storybook/theming": 6.3.0-alpha.7
-    babel-core: 6
-    babel-loader: 8.2.2
-    babel-runtime: 6
     global: ^4.4.0
-    react: ^15.7.0
-    react-dom: ^15.7.0
-    react-scripts: 3.4.4
+    react: 16.14.0
+    react-dom: 16.14.0
+    react-scripts: ^4.0.2
     webpack: 4
   languageName: unknown
   linkType: soft
