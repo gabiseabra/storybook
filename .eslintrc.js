@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   extends: ['@storybook/eslint-config-storybook'],
   rules: {
+    camelcase: ['error', { ignoreDestructuring: true, ignoreImports: true, properties: "never" }],
     '@typescript-eslint/ban-ts-comment': 'warn',
   },
   overrides: [

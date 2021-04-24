@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { Parameters } from './run-e2e';
 
 const fromDeps = (...args: string[]): string =>
