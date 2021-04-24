@@ -28,14 +28,14 @@ class ObjectType<T> extends Component<ObjectTypeProps<T>> {
     onChange: (value) => value,
   };
 
-  static serialize: { <T>(object: T): string } = (object) => JSON.stringify(object);
+  static serialize: { <T0>(object: T0): string } = (object) => JSON.stringify(object);
 
-  static deserialize: { <T>(value: string): T } = (value) => (value ? JSON.parse(value) : {});
+  static deserialize: { <T0>(value: string): T0 } = (value) => (value ? JSON.parse(value) : {});
 
-  static getDerivedStateFromProps<T>(
-    props: ObjectTypeProps<T>,
-    state: ObjectTypeState<T>
-  ): ObjectTypeState<T> | null {
+  static getDerivedStateFromProps<T0>(
+    props: ObjectTypeProps<T0>,
+    state: ObjectTypeState<T0>
+  ): ObjectTypeState<T0> | null {
     if (!deepEqual(props.knob.value, state.json)) {
       try {
         return {

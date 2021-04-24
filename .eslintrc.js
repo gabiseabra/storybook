@@ -45,6 +45,10 @@ module.exports = {
         'react/prop-types': 'off', // we should use types
         'react/forbid-prop-types': 'off', // we should use types
         'no-dupe-class-members': 'off', // this is called overloads in typescript
+        'no-shadow': 'off',
+        '@typescript-eslint/no-shadow': ['error', { ignoreTypeValueShadow: true }],
+        'no-redeclare': 'off',
+        '@typescript-eslint/no-redeclare': ['error'],
       },
     },
     {

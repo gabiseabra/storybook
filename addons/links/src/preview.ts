@@ -31,7 +31,7 @@ const generateUrl = (id: string) => {
   )}`;
 };
 
-const valueOrCall = (args: string[]) => (value: string | ((...args: string[]) => string)) =>
+const valueOrCall = (args: string[]) => (value: string | ((..._args: string[]) => string)) =>
   typeof value === 'function' ? value(...args) : value;
 
 export const linkTo = (
