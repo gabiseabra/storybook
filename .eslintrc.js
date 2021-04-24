@@ -3,6 +3,8 @@ module.exports = {
   extends: ['@storybook/eslint-config-storybook'],
   rules: {
     camelcase: ['error', { ignoreDestructuring: true, ignoreImports: true, properties: "never" }],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/ban-types': 'warn',
     '@typescript-eslint/ban-ts-comment': 'warn',
   },
   overrides: [
