@@ -36,7 +36,6 @@ export const prepareForInline = (storyFn: StoryFn<IStory>, { id, parameters }: S
         }
       );
 
-      // eslint-disable-next-line no-undef
       customElements.define(
         customElementsName,
         await new ElementRendererService().renderAngularElement({
