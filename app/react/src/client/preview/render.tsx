@@ -8,7 +8,7 @@ const rootEl = document ? document.getElementById('root') : null;
 
 const render = (node: ReactElement, el: Element) =>
   new Promise((resolve) => {
-    ReactDOM.render(node, el, resolve);
+    ReactDOM.render(node, el, resolve as () => void);
   });
 
 class ErrorBoundary extends Component<{
