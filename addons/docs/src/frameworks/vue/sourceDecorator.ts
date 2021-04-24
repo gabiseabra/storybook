@@ -1,4 +1,4 @@
-/* eslint no-underscore-dangle: ["error", { "allow": ["_vnode"] }] */
+/* eslint no-underscore-dangle: ["error", { "allow": ["_vnode", "__isArgsStory"] }] */
 
 import { addons, StoryContext } from '@storybook/addons';
 import { logger } from '@storybook/client-logger';
