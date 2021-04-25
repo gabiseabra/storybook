@@ -20,6 +20,9 @@ jobs:
       run: |
         yarn install --immutable
         yarn bootstrap --core
+    - name: lint
+      run: |
+        yarn lint
     - name: test
       run: |
         yarn test --runInBand --ci
