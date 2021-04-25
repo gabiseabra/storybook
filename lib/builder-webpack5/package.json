@@ -1,6 +1,6 @@
 {
   "name": "@storybook/builder-webpack5",
-  "version": "6.2.0-rc.4",
+  "version": "6.3.0-alpha.14",
   "description": "Storybook framework-agnostic API",
   "keywords": [
     "storybook"
@@ -13,6 +13,10 @@
     "type": "git",
     "url": "https://github.com/storybookjs/storybook.git",
     "directory": "lib/core"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/storybook"
   },
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -56,19 +60,19 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
-    "@storybook/addons": "6.2.0-rc.4",
-    "@storybook/api": "6.2.0-rc.4",
-    "@storybook/channel-postmessage": "6.2.0-rc.4",
-    "@storybook/channels": "6.2.0-rc.4",
-    "@storybook/client-api": "6.2.0-rc.4",
-    "@storybook/client-logger": "6.2.0-rc.4",
-    "@storybook/components": "6.2.0-rc.4",
-    "@storybook/core-common": "6.2.0-rc.4",
-    "@storybook/core-events": "6.2.0-rc.4",
-    "@storybook/node-logger": "6.2.0-rc.4",
-    "@storybook/router": "6.2.0-rc.4",
+    "@storybook/addons": "6.3.0-alpha.14",
+    "@storybook/api": "6.3.0-alpha.14",
+    "@storybook/channel-postmessage": "6.3.0-alpha.14",
+    "@storybook/channels": "6.3.0-alpha.14",
+    "@storybook/client-api": "6.3.0-alpha.14",
+    "@storybook/client-logger": "6.3.0-alpha.14",
+    "@storybook/components": "6.3.0-alpha.14",
+    "@storybook/core-common": "6.3.0-alpha.14",
+    "@storybook/core-events": "6.3.0-alpha.14",
+    "@storybook/node-logger": "6.3.0-alpha.14",
+    "@storybook/router": "6.3.0-alpha.14",
     "@storybook/semver": "^7.3.2",
-    "@storybook/theming": "6.2.0-rc.4",
+    "@storybook/theming": "6.3.0-alpha.14",
     "@types/node": "^14.0.10",
     "babel-loader": "^8.2.2",
     "babel-plugin-macros": "^3.0.1",
@@ -94,7 +98,6 @@
     "util-deprecate": "^1.0.2",
     "webpack": "^5.9.0",
     "webpack-dev-middleware": "^4.1.0",
-    "webpack-filter-warnings-plugin": "^1.2.1",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-virtual-modules": "^0.4.1"
   },
@@ -119,5 +122,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "1ac1d37eff1c54867ef24623da270f5f3472d25c"
+  "gitHead": "eb1e3a913f3c5329539a7a908e7cb955ffaa8100"
 }

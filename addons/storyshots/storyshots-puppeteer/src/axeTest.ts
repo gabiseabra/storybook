@@ -3,7 +3,7 @@ import { defaultCommonConfig, CommonConfig } from './config';
 import { puppeteerTest } from './puppeteerTest';
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace,no-redeclare
+  // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace jest {
     interface Matchers<R, T> {
       toPassAxeTests(parameters: any): R;

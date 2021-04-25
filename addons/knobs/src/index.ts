@@ -52,7 +52,7 @@ export function number(
     : options;
 
   const finalOptions = {
-    type: 'number' as 'number',
+    type: 'number' as const,
     ...mergedOptions,
     value,
     groupId,

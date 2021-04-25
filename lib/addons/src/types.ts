@@ -163,12 +163,12 @@ export type BaseDecorators<StoryFnReturnType> = Array<
   (story: () => StoryFnReturnType, context: StoryContext) => StoryFnReturnType
 >;
 
-export interface BaseAnnotations<Args, StoryFnReturnType> {
+export interface BaseAnnotations<ArgsT, StoryFnReturnType> {
   /**
    * Dynamic data that are provided (and possibly updated by) Storybook and its addons.
    * @see [Arg story inputs](https://storybook.js.org/docs/react/api/csf#args-story-inputs)
    */
-  args?: Partial<Args>;
+  args?: Partial<ArgsT>;
 
   /**
    * ArgTypes encode basic metadata for args, such as `name`, `description`, `defaultValue` for an arg. These get automatically filled in by Storybook Docs.
@@ -191,8 +191,8 @@ export interface BaseAnnotations<Args, StoryFnReturnType> {
   decorators?: BaseDecorators<StoryFnReturnType>;
 }
 
-export interface Annotations<Args, StoryFnReturnType>
-  extends BaseAnnotations<Args, StoryFnReturnType> {
+export interface Annotations<ArgsT, StoryFnReturnType>
+  extends BaseAnnotations<ArgsT, StoryFnReturnType> {
   /**
    * Used to only include certain named exports as stories. Useful when you want to have non-story exports such as mock data or ignore a few stories.
    * @example
@@ -255,8 +255,8 @@ export interface BaseMeta<ComponentType> {
   subcomponents?: Record<string, ComponentType>;
 }
 
-export interface BaseStory<Args, StoryFnReturnType> {
-  (args: Args, context: StoryContext): StoryFnReturnType;
+export interface BaseStory<ArgsT, StoryFnReturnType> {
+  (args: ArgsT, context: StoryContext): StoryFnReturnType;
 
   /**
    * Override the display name in the UI

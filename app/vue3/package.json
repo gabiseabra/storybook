@@ -1,6 +1,6 @@
 {
   "name": "@storybook/vue3",
-  "version": "6.2.0-rc.4",
+  "version": "6.3.0-alpha.14",
   "description": "Storybook for Vue 3: Develop Vue 3 Components in isolation with Hot Reloading.",
   "keywords": [
     "storybook"
@@ -13,6 +13,10 @@
     "type": "git",
     "url": "https://github.com/storybookjs/storybook.git",
     "directory": "app/vue3"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/storybook"
   },
   "license": "MIT",
   "main": "dist/cjs/client/index.js",
@@ -41,9 +45,9 @@
     "prepare": "node ../../scripts/prepare.js"
   },
   "dependencies": {
-    "@storybook/addons": "6.2.0-rc.4",
-    "@storybook/core": "6.2.0-rc.4",
-    "@storybook/core-common": "6.2.0-rc.4",
+    "@storybook/addons": "6.3.0-alpha.14",
+    "@storybook/core": "6.3.0-alpha.14",
+    "@storybook/core-common": "6.3.0-alpha.14",
     "@types/webpack-env": "^1.16.0",
     "core-js": "^3.8.2",
     "global": "^4.4.0",
@@ -53,7 +57,7 @@
     "regenerator-runtime": "^0.13.7",
     "ts-dedent": "^2.0.0",
     "ts-loader": "^8.0.14",
-    "vue-docgen-api": "^4.34.2",
+    "vue-docgen-api": "^4.38.0",
     "vue-docgen-loader": "^1.5.0",
     "webpack": "4"
   },
@@ -76,5 +80,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "1ac1d37eff1c54867ef24623da270f5f3472d25c"
+  "gitHead": "eb1e3a913f3c5329539a7a908e7cb955ffaa8100"
 }

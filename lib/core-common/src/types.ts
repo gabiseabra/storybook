@@ -142,7 +142,7 @@ export interface CLIOptions {
   docsDll?: boolean;
   uiDll?: boolean;
   debugWebpack?: boolean;
-  webpackStatsJson?: string;
+  webpackStatsJson?: string | boolean;
   outputDir?: string;
 }
 
@@ -169,6 +169,7 @@ export interface Builder<Config, Stats> {
     options: Options;
     startTime: ReturnType<typeof process.hrtime>;
     router: Router;
+    server: Server;
   }) => Promise<void | {
     stats: Stats;
     totalTime: ReturnType<typeof process.hrtime>;

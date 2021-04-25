@@ -38,7 +38,7 @@ const getNonInputsOutputsProps = (
  */
 export const createStorybookWrapperComponent = (
   template: string,
-  storyComponent: Type<unknown>,
+  storyComponent: Type<unknown> | undefined,
   styles: string[],
   initialProps?: ICollection
 ): Type<any> => {

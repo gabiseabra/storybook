@@ -114,6 +114,7 @@ Args are used in story templates to configure the component appearance just as y
     'react/page-story-slots.ts.mdx',
     'vue/page-story-slots.2.js.mdx',
     'vue/page-story-slots.3.js.mdx',
+    'angular/page-story-slots.ts.mdx'
   ]}
 />
 
@@ -131,7 +132,7 @@ In order to protect against [XSS](https://owasp.org/www-community/attacks/xss/) 
 
 The `args` param is always a set of `key:value` pairs delimited with a semicolon `;`. Values will be coerced (cast) to their respective `argTypes` (which may have been automatically inferred). Objects and arrays are supported. Special values `null` and `undefined` can be set by prefixing with a bang `!`. For example, `args=obj.key:val;arr[0]:one;arr[1]:two;nil:!null` will be interpreted as:
 
-```
+```js
 {
   obj: { key: 'val' },
   arr: ['one', 'two'],
@@ -139,13 +140,15 @@ The `args` param is always a set of `key:value` pairs delimited with a semicolon
 }
 ```
 
+Similarly, special formats are available for dates and colors. Date objects will be encoded as `!date(value)` with value represented as an ISO date string. Colors are encoded as `!hex(value)`, `!rgba(value)` or `!hsla(value)`. Note that rgb(a) and hsl(a) should not contain spaces or percentage signs in the URL.
+
 Args specified through the URL will extend and override any default values of args specified on the story.
 
 ## Mapping to complex arg values
 
 Complex values such as JSX elements cannot be serialized to the manager (e.g. the Controls addon) or synced with the URL. To work around this limitation, arg values can be "mapped" from a simple string to a complex type using the `mapping` property in `argTypes`. This works on any type of arg, but makes most sense when used with the `select` control type.
 
-```
+```js
 argTypes: {
   label: {
     options: ['Normal', 'Bold', 'Italic'],
