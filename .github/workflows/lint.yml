@@ -16,6 +16,7 @@ jobs:
       with:
         path: node_modules
         key: yarn-2-cache-v1-${{ hashFiles('**/yarn.lock') }}
+    - name: install
+      run: yarn
     - name: lint
-      run: |
-        yarn lint
+      run: yarn lint
